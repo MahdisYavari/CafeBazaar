@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="blueFab">
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+    <style name="txt_title_view">
+        <item name="fontFamily">@font/iran_sans_en_number</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="txt_description">
+        <item name="fontFamily">@font/iran_sans_en_number</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="txt_price">
+        <item name="fontFamily">@font/iran_sans_en_number</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+</resources>

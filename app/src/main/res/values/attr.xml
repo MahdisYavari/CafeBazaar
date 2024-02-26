@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <declare-styleable name="CustomAccountLabel">-->
+<!--        <attr name="titleLabelText" format="string" />-->
+<!--        <attr name="subLabelText" format="string" />-->
+<!--    </declare-styleable>-->
+
+<!--    <declare-styleable name="CustomAccountEditTextWithTitle">-->
+<!--        <attr name="titleText" format="string" />-->
+<!--        <attr name="startDrawable" format="reference|color" />-->
+<!--        <attr name="nextFocusForward" format="reference" />-->
+<!--        <attr name="isVisible" format="boolean" />-->
+<!--&lt;!&ndash;        <attr name="inputType" format="" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="imeOptions" format="reference" />&ndash;&gt;-->
+<!--    </declare-styleable>-->
+
+<!--    <declare-styleable name="CustomAuthenticatePhone">-->
+<!--        <attr name="descriptionText" format="string" />-->
+<!--        <attr name="subDescriptionText" format="string" />-->
+<!--        <attr name="phoneNumberTitleText" format="string" />-->
+<!--        <attr name="verificationCodeTitleText" format="string" />-->
+<!--    </declare-styleable>-->
+
+<!--    <declare-styleable name="CustomWarningDialog">-->
+<!--        <attr name="warningText" format="string" />-->
+<!--        <attr name="cancelText" format="string" />-->
+<!--        <attr name="okText" format="string" />-->
+<!--    </declare-styleable>-->
+
+<!--    <declare-styleable name="PersianDatePicker">-->
+<!--        <attr name="minYear" format="integer" />-->
+<!--        <attr name="maxYear" format="integer" />-->
+<!--        <attr name="selectedYear" format="integer" />-->
+<!--        <attr name="selectedMonth" format="integer" />-->
+<!--        <attr name="selectedDay" format="integer" />-->
+<!--        <attr name="displayMonthNames" format="boolean" />-->
+<!--        <attr name="yearRange" format="integer" />-->
+<!--        <attr name="displayDescription" format="boolean" />-->
+<!--    </declare-styleable>-->
+
+<!--    <declare-styleable name="CustomerInformation">-->
+<!--        <attr name="customerInformationText" format="string" />-->
+<!--        <attr name="isRequireName" format="boolean" />-->
+<!--        <attr name="isRequireFamily" format="boolean" />-->
+<!--        <attr name="isRequireEmail" format="boolean" />-->
+<!--        <attr name="isRequirePhoneNumber" format="boolean" />-->
+<!--        <attr name="isRequireNationalCode" format="boolean" />-->
+<!--        <attr name="isRequireSubscriptionNumber" format="boolean" />-->
+<!--        <attr name="isRequireBirthDay" format="boolean" />-->
+<!--    </declare-styleable>-->
+
+<!--    <declare-styleable name="SelectPaymentItem">-->
+<!--        <attr name="descriptionText" format="string" />-->
+<!--        <attr name="priceText" format="string" />-->
+<!--        <attr name="codeText" format="string" />-->
+<!--        <attr name="descriptionStartDrawable" format="reference" />-->
+<!--        <attr name="priceTextColor" format="reference" />-->
+<!--        <attr name="descriptionTextColor" format="reference" />-->
+<!--        <attr name="isVisibilitySubDescription" format="boolean" />-->
+<!--    </declare-styleable>-->
+
+<!--    <declare-styleable name="OtherServiceItem">-->
+<!--        <attr name="actionText" format="string" />-->
+<!--        <attr name="actionBackground" format="reference" />-->
+<!--    </declare-styleable>-->
+
+<!--    <declare-styleable name="NotFound">-->
+<!--        <attr name="notFoundText" format="string" />-->
+<!--        <attr name="notFoundBackground" format="reference" />-->
+<!--    </declare-styleable>-->
+</resources>
