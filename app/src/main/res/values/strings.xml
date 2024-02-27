@@ -1,6 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">app</string>
-    <string name="please_wait">please wait</string>
+    <string name="please_wait">Please wait</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="try_again">Try again</string>
 
     //notifications
     <string name="action_failed">failed</string>

@@ -1,6 +1,6 @@
 package com.example.interview.tools.di
 
-import com.example.interview.tools.network.api.MyApi
+import com.example.interview.tools.network.api.MovieApi
 import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
@@ -18,6 +18,8 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
+
+    private const val apiKey = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMmYyMmFlYjc0MjM1NzUzOGI3MTNkM2U4Yjk0MzI4ZCIsInN1YiI6IjY1ZGM4NTRiYjdiNjlkMDE3ZGM5NmQ2NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.C8bGbW2in7sb8Ir3-AZe-JakZi_-XDC5LAJcDFqqMkQ"
 
     @Provides
     @Singleton
@@ -45,7 +47,7 @@ object NetworkModule {
             .create()
 
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("https://api.themoviedb.org/3/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .client(client.build())
             .build()
@@ -55,12 +57,13 @@ object NetworkModule {
     @Provides
     fun provideSharedHeaders(): Headers {
         return Headers.Builder()
-            .add("api_key", "")
+            .add("accept", "application/json")
+            .add("Authorization", "Bearer $apiKey")
             .build()
     }
 
     @Provides
     @Singleton
-    fun provideProductApi(retrofit: Retrofit): MyApi =
-        retrofit.create(MyApi::class.java)
+    fun provideProductApi(retrofit: Retrofit): MovieApi =
+        retrofit.create(MovieApi::class.java)
 }

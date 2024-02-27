@@ -1,7 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">app</string>
     <string name="please_wait">لطفا منتظر بمانید</string>
-
+    <string name="something_went_wrong">مشکلی پیش آمده است</string>
+    <string name="try_again">تلاش مجدد</string>
 
     //notification
     <string name="action_failed">ناموفق</string>

@@ -9,16 +9,16 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/light_gray"
         android:gravity="center">
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_description"
             style="@style/txtToolbarDescription"
             android:layout_width="match_parent"
+            android:drawableEnd="@drawable/ic_bazaar"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            tools:ignore="RtlHardcoded"
+            android:textColor="@color/red"
+            tools:ignore="RtlCompat,RtlHardcoded"
             tools:text="description" />
 
     </com.google.android.material.appbar.MaterialToolbar>
