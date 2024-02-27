@@ -3,6 +3,7 @@ package com.example.interview.view.home.adapter
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.example.interview.R
 import com.example.interview.databinding.MoviesListItemBinding
 import com.example.interview.model.MovieResultItemModel
 import com.example.interview.tools.base.adapter.AdapterBase
@@ -31,7 +32,9 @@ class MovieAdapter(
             super.bind(movieResultItemModel)
             binding.txtMovieName.text = movieResultItemModel.title
             Picasso.get().load("https://image.tmdb.org/t/p/w500" + movieResultItemModel.posterPath)
-                .into(binding.imgMovie)
+                .placeholder(
+                    R.drawable.ic_film_clapperboard
+                ).into(binding.imgMovie)
         }
 
         override fun initListener(movieResultItemModel: MovieResultItemModel) {

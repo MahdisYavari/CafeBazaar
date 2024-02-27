@@ -3,9 +3,10 @@
     <color name="purple_200">#FFBB86FC</color>
     <color name="colorPrimary">#5C5C5C</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="colorAccent">#FF03DAC5</color>
+    <color name="colorAccent">#26C686</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="dark">#0B0B0B</color>
     <color name="dark_gray">#353535</color>
     <color name="light_gray">#9E9E9E</color>
     <color name="white">#ffffff</color>
@@ -14,4 +15,5 @@
     <color name="dark_pink">#DC0A51</color>
     <color name="red">#C50909</color>
     <color name="yellow">#FFEB3B</color>
+    <color name="purple">#191A1F</color>
 </resources>

@@ -47,7 +47,7 @@ class MoviesListFragment: BaseFragment<FragmentMoviesListBinding>(), MovieAdapte
     private fun setUpRecyclerview(movieList: List<MovieResultItemModel>) {
         binding.rvMovies.layoutManager =
             GridLayoutManager(
-                activity,
+                requireActivity(),
                 3,
                 LinearLayoutManager.VERTICAL,
                 false
