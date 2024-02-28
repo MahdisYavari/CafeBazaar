@@ -2,7 +2,9 @@ package com.example.interview.tools.base
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.*
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.interview.tools.network.ExceptionHandler
 import com.example.interview.tools.network.NetworkHandler
 import com.example.interview.tools.service.notification.NotificationService
@@ -65,27 +67,12 @@ abstract class BaseViewModel(
                 }
             }
             false -> {
-                //todo
-//                ApplicationActivity.networkDialog?.dialog?.show()
+                handleUnavailableNetwork()
             }
         }
     }
 
-    protected fun sendInformationMessage(messageId: Int) {
-        notificationService.showInformation(
-            activityContext.getString(
-                messageId
-            )
-        )
-    }
-
-    protected fun sendErrorMessage(messageId: Int) {
-        notificationService.showError(
-            activityContext.getString(
-                messageId
-            )
-        )
-    }
+    open fun handleUnavailableNetwork() {}
 
     companion object {
         @SuppressLint("StaticFieldLeak")

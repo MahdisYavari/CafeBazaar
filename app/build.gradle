@@ -103,11 +103,6 @@ dependencies {
     //load image
     implementation 'com.squareup.picasso:picasso:2.71828'
 
-    //data store
-    implementation 'androidx.datastore:datastore-preferences:1.0.0-alpha08'
-    implementation "androidx.datastore:datastore:1.0.0-alpha08"
-    implementation  "com.google.protobuf:protobuf-javalite:3.11.0"
-
     //room
     implementation "androidx.room:room-runtime:2.2.5"
     kapt "androidx.room:room-compiler:2.2.5"

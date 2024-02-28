@@ -62,4 +62,9 @@ class MoviesListFragment: BaseFragment<FragmentMoviesListBinding>(), MovieAdapte
     override fun selectProduct(movieTitle: String) {
         viewModel.showNotification(movieTitle)
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        viewModel.addMoviesListInDB()
+    }
 }

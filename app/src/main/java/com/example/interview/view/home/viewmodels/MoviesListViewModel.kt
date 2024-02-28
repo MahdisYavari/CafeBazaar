@@ -23,11 +23,25 @@ class MoviesListViewModel @Inject constructor(
     fun getMovieList() {
         launchWithState {
             movieRepository.getMovieResponse()
-            _movieList.value = movieRepository.getMovieList()
+            _movieList.value = movieRepository.getMoviesListFromServer()
+        }
+    }
+
+    override fun handleUnavailableNetwork() {
+        super.handleUnavailableNetwork()
+        launchWithState {
+            movieRepository.getMoviesListFromDB()
+            _movieList.value = movieRepository.getMoviesList()
         }
     }
 
     fun showNotification(text: String) {
         notificationService.showInformation(text)
+    }
+
+    fun addMoviesListInDB() {
+        launchWithState {
+            movieRepository.addMoviesListInDB()
+        }
     }
 }
