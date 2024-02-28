@@ -2,6 +2,7 @@ package com.example.interview.tools.base
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -78,6 +79,11 @@ abstract class BaseViewModel(
         @SuppressLint("StaticFieldLeak")
         lateinit var activityContext: AppCompatActivity
         private val _isNotBusy = MutableLiveData(true)
+        val isNotBusy: LiveData<Boolean> = _isNotBusy
         fun isNotBusy(): Boolean = _isNotBusy.value ?: true
+
+        fun setIsNotBusy(isNotBusy: Boolean) {
+            _isNotBusy.value = isNotBusy
+        }
     }
 }

@@ -16,6 +16,13 @@ abstract class BaseActivity<TView : ViewBinding> : AppCompatActivity() {
         BaseViewModel.activityContext = this
     }
 
+    override fun onStart() {
+        super.onStart()
+        initObservers()
+    }
+
+    open fun initObservers() {}
+
     override fun onBackPressed() {
         if (BaseViewModel.isNotBusy()) {
             super.onBackPressed()

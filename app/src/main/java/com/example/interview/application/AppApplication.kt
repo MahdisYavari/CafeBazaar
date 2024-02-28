@@ -1,6 +1,7 @@
 package com.example.interview.application
 
 import android.app.Application
+import com.example.interview.tools.network.NetworkHandler
 import com.example.interview.tools.service.notification.NotificationServiceImp
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -14,6 +15,7 @@ class AppApplication : Application() {
             super.onCreate()
             context = this
             NotificationServiceImp.androidApplication = this
+            NetworkHandler.context = this
         } catch (e: Exception) {
         }
     }

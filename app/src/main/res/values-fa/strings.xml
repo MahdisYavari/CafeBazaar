@@ -2,7 +2,9 @@
     <string name="app_name">app</string>
     <string name="please_wait">لطفا منتظر بمانید</string>
     <string name="something_went_wrong">مشکلی پیش آمده است</string>
+    <string name="network_error">لطفا از وضعیت اینترنت خود مطمئن شوید</string>
     <string name="try_again">تلاش مجدد</string>
+    <string name="retry">تلاش مجدد</string>
 
     //notification
     <string name="action_failed">ناموفق</string>

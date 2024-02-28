@@ -3,15 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@+id/login">
+    app:startDestination="@+id/launcher">
 
     <fragment
-        android:id="@+id/login"
-        android:name="com.example.interview.view.account.LoginFragment"
+        android:id="@+id/launcher"
+        android:name="com.example.interview.view.launcher.LauncherFragment"
         android:label="login"
-        tools:layout="@layout/fragment_login">
+        tools:layout="@layout/fragment_launcher">
         <action
-            android:id="@+id/action_login_to_home"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_launcher_to_home"
+            app:destination="@id/home" />
+        <action
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_launcher_to_network_lost"
+            app:destination="@id/network_lost" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/network_lost"
+        android:name="com.example.interview.view.launcher.NetworkLostFragment"
+        android:label="networkLost"
+        tools:layout="@layout/fragment_network_lost">
+        <action
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_network_lost_to_home"
             app:destination="@id/home" />
     </fragment>
 

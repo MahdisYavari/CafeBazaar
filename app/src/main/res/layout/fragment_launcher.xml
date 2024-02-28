@@ -10,24 +10,19 @@
         android:layout_width="@dimen/_80sdp"
         android:layout_height="@dimen/_95sdp"
         android:layout_gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/btn_ok"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_bazaar" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_ok"
-        style="@style/btStyle"
+    <ProgressBar
+        android:id="@+id/progress_launcher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Login"
-        android:background="@drawable/bg_login_btn"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_16sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
